@@ -70,7 +70,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../assets/logo/background.jpg);
+  background-image: url("./assets/logo/background.jpg");
   color: var(--text-primary);
 }
 
@@ -156,7 +156,7 @@
 }
 
 .Container-Page-Three {
-  background-image: url("../assets/logo/background_two.jpg");
+  background-image: url("./assets/logo/background_two.jpg");
   background-position: center;
   background-size: cover;
   color: var(--text-primary);
@@ -207,7 +207,7 @@
   max-width: 50%;
   width: 100%;
   height: auto;
-  background-image: url("../assets/logo/colorful-mixed-removebg-preview.png");
+  background-image: url("./assets/logo/colorful-mixed-removebg-preview.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +281,7 @@
 .Container-Page-Six {
   width: 100%;
   height: auto;
-  background-image: url("../assets/logo/atomic_background.jpg");
+  background-image: url("./assets/logo/atomic_background.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
