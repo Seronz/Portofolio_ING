@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Handlee", cursive;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-primary: #faf3f0;
+  --text-secondary: #f11a7b;
+  --text-three: #a2ff86;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+.Container-Header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.Wrapper-Header-Logo {
+  margin-right: auto;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.Logo {
+  height: 100%;
+}
+
+.Wrapper-Header-Nav {
+  display: flex;
+  margin-right: 1rem;
+  gap: 2rem;
+}
+
+.Nav {
+  color: rgb(170, 165, 165);
+  border-radius: 5px;
+  transition: background-color 2s ease-in-out;
+  cursor: pointer;
+}
+
+.Nav:hover {
+  background-color: black;
+}
+
+.Menu-Burger {
+  display: none;
+}
+
+.Container-Page-One {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./assets/logo/background.jpg);
+  color: var(--text-primary);
+}
+
+.Container-Page-One .Hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+}
+
+#Hour {
+  font-size: 5rem;
+  font-family: "Handlee", cursive;
+}
+
+#Day {
+  font-family: "Handlee", cursive;
+}
+
+.Wrapper-Description {
+  margin-top: 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Description-Section-One {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Container-Page-Two {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper-About-Me {
+  margin: 1rem 0;
+  display: flex;
+  width: 90%;
+  gap: 2rem;
+}
+
+.Child-About-Me {
+  width: 100%;
+}
+
+.Itsme {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+
+.Name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.Name-Span {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: dotted;
+}
+
+.About-Me {
+  font-size: 1.3rem;
+}
+
+.About-Me-Image {
+  width: 30rem;
+  height: 20rem;
+}
+
+.About-Me-Image img {
+  border-radius: 10px;
+}
+
+.Container-Page-Three {
+  background-image: url("./assets/logo/background_two.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.Container-Page-Three p {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px red;
+  margin: 1rem;
+}
+
+.Container-Page-Four {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Wrapper-Page-Four {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.Child-Page-Four {
+  max-width: 50%;
+}
+
+.Page-Four-Title {
+  font-size: 2rem;
+}
+
+.Page-Four-Title span {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: greenyellow;
+}
+
+.Image-Page-Four {
+  max-width: 50%;
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/logo/colorful-mixed-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Image-Page-Four img {
+  width: 90%;
+  height: 90%;
+  animation: slide 5s ease-in-out infinite;
+}
+
+.Child-Page-Four ul {
+  margin: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Child-Page-Four ul div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Child-Page-Four ul div li {
+  font-size: 1.5rem;
+}
+
+.Container-Page-Five {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Wrapper-Page-Five {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(206, 193, 193, 0.9);
+}
+
+.Wrapper-Page-Five .Title {
+  font-size: 3rem;
+}
+
+.Child-Page-Five {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.Child-Page-Five .Title {
+  font-size: 1.8rem;
+}
+
+.Child-Page-Five .Title span {
+  color: red;
+  font-weight: bold;
+}
+
+.Container-Page-Six {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/logo/atomic_background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.Wrapper-Page-Six {
+  width: 90%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Wrapper-Page-Six .Quotes {
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px #00ffff;
+}
+
+.Container-Page-Seven {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper-Page-Seven {
+  width: 90%;
+  height: auto;
+  margin: 1rem;
+}
+
+.Page-Seven-Title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Container-Paragraph-Page-Seven {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.Child-Page-Seven-Paragraph-One {
+  max-width: 50%;
+}
+
+.Child-Page-Seven-Paragraph-Two {
+  max-width: 50%;
+}
+
+.Container-Page-Eight {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Wrapper-Page-Eight {
+  width: 90%;
+  height: auto;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.Container-Page-Nine {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #461959;
+  color: var(--text-primary);
+}
+
+.Wrapper-Page-Nine {
+  width: 90%;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.Child-Page-Nine {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.Child-Name {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.Wrapper-Page-Nine .Title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--text-secondary);
+}
+
+.Wrapper-Page-Nine .Name {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: var(--text-three);
+}
+
+.Name-Description {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.Page-Nine-Img {
+  max-width: 50%;
+  height: 25rem;
+  border-radius: 10px;
+}
+
+.Technology {
+  width: 100%;
+}
+
+.Technology-Plus:hover {
+  cursor: pointer;
+}
+
+.Container-Icon {
+  margin-top: 1rem;
+  display: none;
+  gap: 1rem;
+  background-color: rgba(206, 193, 193, 0.9);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.Container-Icon.active {
+  display: flex;
+}
+
+.Icon {
+  width: 4rem;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .Menu-Burger {
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  .Wrapper-Header-Nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    margin: 0;
+    background-color: whitesmoke;
+    transition: 2s ease-in-out;
+  }
+
+  .Wrapper-Header-Nav.active {
+    right: 0;
+  }
+
+  .Wrapper-Header-Nav .Nav {
+    display: block;
+    margin: 2rem;
+  }
+
+  .Hours {
+    margin-top: 6rem;
+  }
+
+  .Wrapper-Description {
+    margin-top: 1rem;
+  }
+
+  .Wrapper-About-Me {
+    flex-wrap: wrap-reverse;
+  }
+
+  .About-Me {
+    font-size: 1rem;
+  }
+
+  .Container-Page-Three p {
+    font-size: 1.5rem;
+  }
+
+  .Wrapper-Page-Four {
+    flex-wrap: wrap;
+  }
+
+  .Image-Page-Four {
+    max-width: 100%;
+  }
+
+  .Child-Page-Four {
+    max-width: 100%;
+  }
+
+  .Child-Page-Four ul {
+    margin: 1rem;
+  }
+
+  .Wrapper-Page-Six .Quotes {
+    font-size: 2rem;
+  }
+
+  .Wrapper-Page-Seven {
+    flex-wrap: wrap;
+  }
+
+  .Wrapper-Page-Nine .Name {
+    font-size: 1.5rem;
+  }
+
+  .Child-Page-Nine {
+    flex-wrap: wrap-reverse;
+  }
+
+  .Page-Nine-Img {
+    max-width: 100%;
+  }
+
+  .Name-Description {
+    font-size: 1rem;
+  }
+}
