@@ -444,10 +444,10 @@
     display: block;
     position: absolute;
     top: 100%;
-    right: -100%;
+    right: -40%;
     margin: 0;
     background-color: whitesmoke;
-    transition: 2s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   .Wrapper-Header-Nav.active {
